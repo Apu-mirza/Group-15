@@ -1,7 +1,7 @@
 @import url('components.css');
 
 .home-bg{
-   background: url(../images/home-bg1.jpg) no-repeat;
+   background: url(../images/home-bg.jpg) no-repeat;
    background-size: cover;
    background-position: center;
 }
@@ -52,7 +52,7 @@
 .home-category .box-container .box{
    padding:2rem;
    text-align: center;
-   border:1px solid aqua;
+   border:var(--border);
    background-color: var(--white);
    box-shadow: var(--box-shadow);
    border-radius: .5rem;
@@ -60,7 +60,6 @@
 
 .home-category .box-container .box img{
    width: 100%;
-   height: 160px;
    margin-bottom: 1rem;
 }
 
@@ -84,7 +83,7 @@
 
 .products .box-container{
    display: grid;
-   grid-template-columns: repeat(auto-fit, 27rem);
+   grid-template-columns: repeat(auto-fit, 35rem);
    gap:1.5rem;
    justify-content: center;
    align-items: flex-start;
@@ -93,7 +92,7 @@
 .products .box-container .box{
    padding:2rem;
    text-align: center;
-   border: 1px goldenrod;
+   border:var(--border);
    background-color: var(--white);
    box-shadow: var(--box-shadow);
    border-radius: .5rem;
@@ -136,7 +135,6 @@
 
 .products .box-container .box img{
    width: 100%;
-   height: 160px;
    margin-bottom: 1rem;
 }
 
@@ -214,8 +212,8 @@
 
 .p-category{
    display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
-   gap:1.3rem;
+   grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+   gap:1.5rem;
    justify-content: center;
    align-items: flex-start;
 }
@@ -224,20 +222,21 @@
    padding-bottom: 0;
 }
 
-.p-category .dropbtn{
+.p-category a{
    padding:1.5rem;
    text-align: center;
    border:var(--border);
+   background-color: var(--white);
    box-shadow: var(--box-shadow);
-   color: white;
    border-radius: .5rem;
    font-size: 2rem;
    text-transform: capitalize;
+   color:var(--black);
 }
 
 .p-category a:hover{
-   background-color: black;
-   color: black;
+   background-color: var(--black);
+   color: var(--white);
 }
 
 .about .row{
@@ -763,48 +762,3 @@
    }
 
 }
-
-
-/*-------------hover effect on multiple link----------*/
-
-.dropbtn {
-   background-color: #06D;
-   display: block;
-   width: 100%;
-   margin-top: 1rem;
-   border-radius: .5rem;
-   color:var(--white);
-   font-size: 2rem;
-   padding:1.3rem 1.3rem;
-   text-transform: capitalize;
-   cursor: pointer;
-   text-align: center;
- }
- 
- .dropdown {
-   position: relative;
-   display: inline-block;
- }
- 
- .dropdown-content {
-   display: none;
-   position: absolute;
-   /* background-color: red; */
-   min-width: 160px;
-   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-   z-index: 1;
- }
- 
- .dropdown-content a {
-   color: black;
-   padding: 12px 16px;
-   text-decoration: none;
-   display: block;
-   margin-top: -.5rem;
- }
- 
- .dropdown-content a:hover {background-color: green;}
- 
- .dropdown:hover .dropdown-content {display: block;}
- 
- .dropdown:hover .dropbtn {background-color: lightseagreen;}

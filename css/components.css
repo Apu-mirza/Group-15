@@ -171,11 +171,11 @@ section{
 .form-container form{
    width: 50rem;
    background-color: var(--white);
+   border-radius: .5rem;
    box-shadow: var(--box-shadow);
-   border: 2px solid green;
-   border-radius: 30px;
+   border:var(--border);
    text-align: center;
-   padding:3rem;
+   padding:2rem;
 }
 
 .form-container form h3{
@@ -188,7 +188,7 @@ section{
 .form-container form .box{
    width: 100%;
    margin:1rem 0;
-   border-radius: 10px;
+   border-radius: .5rem;
    border:var(--border);
    padding:1.2rem 1.4rem;
    font-size: 1.8rem;
